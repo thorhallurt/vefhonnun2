@@ -1,0 +1,35 @@
+.circle {
+
+    border: 1px solid;
+    border-radius: 50%;
+    margin: 0 auto;
+    width: 2em;
+    height: 2em;
+    text-align: center;
+    padding: 0.5em
+
+}
+
+.hidden {
+
+    display: none;
+
+}
+
+.imgback {
+
+    color: #ddd;
+    background-image: url(../images/values-bg.jpg);
+    background-repeat: round;
+
+}
+
+.rotate5 {
+
+    -webkit-transform: rotate(5deg);
+    -moz-transform: rotate(5deg);
+    -o-transform: rotate(5deg);
+    -ms-transform: rotate(5deg);
+    transform: rotate(5deg);
+
+}
