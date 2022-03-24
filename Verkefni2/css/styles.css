@@ -1,0 +1,64 @@
+.circle {
+
+    border: 1px solid;
+    border-radius: 50%;
+    margin: 0 auto;
+    width: 2em;
+    height: 2em;
+    text-align: center;
+    padding: 0.5em
+
+}
+
+.hidden {
+
+    display: none;
+
+}
+
+.imgback {
+
+    color: #ddd;
+    background-image: url(../images/values-bg.jpg);
+    background-repeat: round;
+
+}
+
+.rotate5 {
+
+    -webkit-transform: rotate(5deg);
+    -moz-transform: rotate(5deg);
+    -o-transform: rotate(5deg);
+    -ms-transform: rotate(5deg);
+    transform: rotate(5deg);
+
+}
+
+.mobileimg {
+
+    width: 50%;
+    height: auto;
+
+}
+
+.circlecontainer {
+
+min-width: 100%;
+text-align: center;
+padding: 0.5em;
+
+}
+
+.fullwidth {
+
+    width: 100%;
+
+}
+
+.mainsection {
+
+    margin: 0 auto;
+    margin-top: 0.5em;
+    max-width: 80%;
+
+}

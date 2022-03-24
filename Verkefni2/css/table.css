@@ -1,0 +1,29 @@
+.schedule {
+  margin: 0 auto;
+  width: 50em;
+}
+
+table {
+  border-collapse:collapse;
+  
+}
+td {
+  border: 1px solid;
+  padding: .3em;
+}
+
+.verk2 {
+
+  margin-top: 1em;
+
+}
+
+@media screen and (min-width:48em) {
+
+  table {
+
+    border-collapse: collapse;
+
+  }
+
+}
