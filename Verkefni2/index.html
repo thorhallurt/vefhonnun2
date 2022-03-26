@@ -262,6 +262,22 @@
         </table>
       </div>
 
+      <div class="col-2">
+
+        <img src="images/placeholder2.png">
+
+        <form class="form col-1">
+
+          <label for="nafn">Nafn:</label>
+          <input type="text" name="nafn" value="" oninvalid="this.setCustomValidity('Vinsamlegast fylltu inn nafnið þitt')" oninput="this.setCustomValidity('')" required placeholder="Fylltu inn nafnið þitt">
+          <label for="simanumer">Símanúmer:</label>
+          <input type="text" oninvalid="this.setCustomValidity('Vinsamlegast skráið aðeins 7 tölustafi')" oninput="this.setCustomValidity('')" pattern="[0-9]{7}" name="simanumer" value="" required placeholder="Fylltu inn símanúmerið þitt">
+          <label for="tolvupostur">Tölvupóstur:</label>
+          <input type="email" name="tolvupostur" value="" oninvalid="this.setCustomValidity('Vinsamlegast settu inn gildan tölvupóst')" oninput="this.setCustomValidity('')" required placeholder="Email address">
+          <textarea required oninvalid="this.setCustomValidity('Vinsamlegast sentu ábendingu')" oninput="this.setCustomValidity('')" placeholder="Ábending - Comment"></textarea>
+          <input class="submitButton" type="submit" value="SEND">
+        </form>
+      </div>
   </section>
   </main>
   <footer class="centre imgback col-2 fullwidth">

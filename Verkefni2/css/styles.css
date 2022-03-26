@@ -63,3 +63,30 @@ padding-bottom: 0.5em;
     max-width: 80%;
 
 }
+
+.form {
+
+    min-width: 80%;
+    margin: 0 auto;
+
+}
+
+.submitButton {
+
+    max-width: 30%;
+    min-height: 3em;
+
+}
+
+.verk2 img {
+
+    align-self: center;
+
+}
+
+.verk2 .col-2 {
+
+    margin-top: 1em;
+    margin-bottom: 1em;
+
+}
