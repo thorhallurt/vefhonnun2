@@ -109,6 +109,9 @@ padding-bottom: 0.5em;
     z-index: 100;
     transition: all .5s ease;
 }
+
+.topnav .menu { list-style-type: none; }
+
 .menuinput:checked ~ .topnav {
     /*max-height: 500px;*/
     left: 2em
@@ -124,3 +127,29 @@ padding-bottom: 0.5em;
 }
 
 .menuinput { display: none !important;}
+
+@media only screen and (min-width:60em) {
+
+    .menubutton { display: none }
+    .topnav .menu {
+
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+
+    }
+
+    .topnav .menu li {
+
+        float: left;
+        margin-right: 1.5em;
+
+    }
+
+    .topnav {
+
+        left: 2em;
+
+    }
+
+}
