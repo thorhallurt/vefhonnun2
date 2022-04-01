@@ -1,0 +1,155 @@
+.circle {
+
+    border: 1px solid;
+    border-radius: 50%;
+    margin: 0 auto;
+    width: 2em;
+    height: 2em;
+    text-align: center;
+    padding: 0.5em
+
+}
+
+.hidden {
+
+    display: none;
+
+}
+
+.imgback {
+
+    color: #ddd;
+    background-image: url(../images/values-bg.jpg);
+    background-repeat: round;
+
+}
+
+.rotate5 {
+
+    -webkit-transform: rotate(5deg);
+    -moz-transform: rotate(5deg);
+    -o-transform: rotate(5deg);
+    -ms-transform: rotate(5deg);
+    transform: rotate(5deg);
+
+}
+
+.mobileimg {
+
+    width: 50%;
+    height: auto;
+
+}
+
+.circlecontainer {
+
+min-width: 100%;
+text-align: center;
+padding-top: 0.5em;
+padding-bottom: 0.5em;
+
+}
+
+.fullwidth {
+
+    width: 100%;
+
+}
+
+.mainsection {
+
+    margin: 0 auto;
+    margin-top: 0.5em;
+    max-width: 80%;
+
+}
+
+.form {
+
+    min-width: 80%;
+    margin: 0 auto;
+
+}
+
+.submitButton {
+
+    max-width: 30%;
+    min-height: 3em;
+
+}
+
+.verk2 img {
+
+    align-self: center;
+
+}
+
+.verk2 .col-2 {
+
+    margin-top: 1em;
+    margin-bottom: 1em;
+
+}
+
+.menubutton {
+    color: #0087cc;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 18px;
+    padding: 5px 9px;
+    transition: all .25s ease;
+}
+
+.topnav {
+    /*max-height: 0;
+    overflow: hidden; - transition height víbrar í símum,*/
+    position: fixed; /* ath - sticky */
+    left: -20em;
+    top: 3em;
+    z-index: 100;
+    transition: all .5s ease;
+}
+
+.topnav .menu { list-style-type: none; }
+
+.menuinput:checked ~ .topnav {
+    /*max-height: 500px;*/
+    left: 2em
+}
+
+.menuinput:checked + .menubutton {
+    box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.35);
+    color: #9799a7;
+}
+
+.menubutton:hover {
+    color: #ff7b29;
+}
+
+.menuinput { display: none !important;}
+
+@media only screen and (min-width:60em) {
+
+    .menubutton { display: none }
+    .topnav .menu {
+
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+
+    }
+
+    .topnav .menu li {
+
+        float: left;
+        margin-right: 1.5em;
+
+    }
+
+    .topnav {
+
+        left: 2em;
+
+    }
+
+}
