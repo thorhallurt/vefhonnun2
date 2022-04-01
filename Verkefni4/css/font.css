@@ -42,3 +42,15 @@
 .icon-clipboard:before {
   content: "\e9b8";
 }
+.icon-facebook2:before {
+  content: "\ea91";
+}
+.icon-twitter:before {
+  content: "\ea96";
+}
+.icon-github:before {
+  content: "\eab0";
+}
+.icon-soundcloud2:before {
+  content: "\eac4";
+}
