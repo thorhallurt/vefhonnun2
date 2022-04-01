@@ -1,0 +1,5 @@
+coin-dollar : e93b
+location : e947
+bubbles4 : e970
+lab : e9aa
+clipboard : e9b8
