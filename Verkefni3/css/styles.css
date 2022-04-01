@@ -149,6 +149,7 @@ padding-bottom: 0.5em;
     .topnav {
 
         left: 2em;
+        position: relative;
 
     }
 
