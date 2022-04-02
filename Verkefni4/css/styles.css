@@ -147,21 +147,29 @@ padding-bottom: 0.5em;
 
 }
 
+a {
+
+    background-position: 0 50%;
+    background-repeat: no-repeat;
+    padding-left: 22px;
+
+}
+
 a[href$=".pdf"] {
     background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/29841/pdf.png");
-    }
-    a[href$=".doc"] {
+}
+a[href$=".doc"] {
     background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/29841/doc.png");
-    }
-    a[href$=".jpg"] {
+}
+a[href$=".jpg"] {
     background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/29841/image.png");
-    }
-    a[href$=".mp3"] {
+}
+a[href$=".mp3"] {
     background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/29841/audio.png");
-    }
-    a[href$=".mp4"] {
+}
+a[href$=".mp4"] {
     background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/29841/video.png");
-    }
+}
 
 @media only screen and (min-width:60em) {
 
