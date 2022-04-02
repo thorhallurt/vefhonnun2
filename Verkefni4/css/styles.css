@@ -155,6 +155,14 @@ a {
 
 }
 
+/* Pseudo classes (for 4.3) */
+.verk2 tbody tr { background-color: rgba(0, 255, 255, 0.3); }
+.verk2 tbody tr:nth-child(2n) { background-color: unset; }
+
+.socButton { list-style: none; }
+.socButton li a:hover { color: goldenrod; }
+.socButton li a { color: white; }
+
 a[href$=".pdf"] {
     background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/29841/pdf.png");
 }
