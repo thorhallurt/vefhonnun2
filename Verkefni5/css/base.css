@@ -1,6 +1,18 @@
-/*:root {
-  
-}*/
+:root {
+
+  --headercolor: #191919; /* Color for larger and smaller text*/
+  --textcolor: rgb(34, 34, 34); /* Default text color */
+  --inversetextcolor: rgb(221, 221, 221); /* Inverse color if background is interfering */
+  --halftable: rgba(0, 255, 255, 0.3); /* Color for half-table */
+  --codeback: #F1F1F1; /* Background for codeblocks */
+  --codecolor: var(--textcolor); /* Text color for codeblocks */
+  --blockquote: var(--headercolor); /* Text color for blockquotes */
+  --formback: #fff; /* Background of inputs */
+  --formcolor: var(--textcolor); /* Text color of inputs */
+  --formborder: 1px solid #D1D1D1; /* Border settings for inputs */
+  --font: 'Roboto Slab', serif; /* Default font */
+
+}
 /* CSS boilerplate  */
 
 /* Table of contents
@@ -29,12 +41,13 @@ body {
   font-size: 1em;
   line-height: 1.6;
   font-weight: 400;
-  font-family: 'Roboto Slab', serif;
-  color: #222; 
+  font-family: var(--font);
+  color: var(--textcolor); 
 }
   
 /* Typography
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+h1, h2, h3, h4, h5, h6 { color: var(--headercolor); }
 h1, h2, h3 {
   font-weight: 300; 
   margin: .5em 0;
@@ -140,8 +153,9 @@ textarea,
 select {
   height: 38px;
   padding: 6px 10px; /* The 6px vertically centers text on FF, ignored by Webkit */
-  background-color: #fff;
-  border: 1px solid #D1D1D1;
+  background-color: var(--formback);
+  color: var(--formcolor);
+  border: var(--formborder);
   border-radius: 4px;
   box-shadow: none;
   box-sizing: border-box; }
@@ -222,7 +236,8 @@ code {
   margin: 0 .2em;
   font-size: 90%;
   white-space: nowrap;
-  background: #F1F1F1;
+  background: var(--codeback);
+  color: var(--codecolor);
   border: 1px solid #E1E1E1;
   border-radius: 4px; }
 pre > code {
@@ -230,6 +245,7 @@ pre > code {
   padding: 1em 1em;
   white-space: pre; }
 
+blockquote { color: var(--blockquote); }
 
 /* Tables
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
