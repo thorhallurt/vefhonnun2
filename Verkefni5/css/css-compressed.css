@@ -155,7 +155,7 @@ table td::before{content:attr(data-label);float:left}
 97.5%{opacity:.9}
 100%{opacity:1}
 }
-.dot{height:0;width:0;background-color:#0ff;border-radius:50%;display:inline-block;position:absolute;left:50%;margin-left:-12.5px;top:50%;animation-name:dot;animation-duration:6s;animation-iteration-count:1;visibility:visible;z-index:5}
+.dot{height:0;width:0;background-color:#0ff;border-radius:50%;display:inline-block;position:fixed;left:50%;margin-left:-12.5px;top:50%;animation-name:dot;animation-duration:6s;animation-iteration-count:1;visibility:visible;z-index:5}
 @keyframes dot{
 0%{display:inline-block;height:25px;width:25px}
 33%{display:inline-block;top:99%}

@@ -46,7 +46,7 @@
     background-color: cyan;
     border-radius: 50%;
     display: inline-block;
-    position: absolute;
+    position: fixed;
     left: 50%;
     margin-left: -12.5px;
     top: 50%;
