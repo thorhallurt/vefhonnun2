@@ -1,0 +1,26 @@
+.info {
+    margin: 0 auto;
+    grid-area: a;
+    margin-top: 2em;
+    text-align: center;
+}
+
+.info img {
+    height: auto;
+}
+
+.mygrid {
+    grid-template-areas: "a" "b";
+}
+
+@media screen and (min-width:37.5em) {
+    .mygrid {
+        grid-template-areas: "b a";
+    }
+}
+
+@media screen and (min-width:48em) {
+    .info img {
+        max-width: 65%
+    }
+}
