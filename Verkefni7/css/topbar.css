@@ -39,6 +39,10 @@
     max-height: 3em;
 }
 
+.selectedButton {
+    background-color: var(--selectedmenucol) !important;
+}
+
 @media only screen and (min-width:60em) {
     .menubutton { display: none; }
     #logo { display: inline; }

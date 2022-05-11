@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="is">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="FakeCompany - Contact">
+  <meta name="author" content="Thorhallur Tryggvason">
+  <title>FakeCompany - Contact</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/grid.css">
+  <link rel="stylesheet" href="../css/font.css">
+  <link rel="stylesheet" href="../css/topbar.css">
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="contact.css">
+
+  <link rel="icon" type="image/svg" href="images/rwd-icon.svg">
+</head>
+
+<body id="top">
+  <span class="dot"></span>
+  <span class="overlay"></span>
+  <nav class="topnav">
+    <input type="checkbox" class="menuinput" id="toggle">
+    <label for="toggle" type="checkbox" class="menubutton">&#9776;</label>
+    <div id="logo">FakeCompany</div>
+    <ul class="menu">
+      <li><a class="button button-primary" href="index.html">
+          <span class="icon-location" aria-hidden="true">HOME</span>
+        </a></li>
+      <li><a class="button button-primary" href="about/index.html">
+          <span class="icon-lab" aria-hidden="true">ABOUT</span>
+        </a></li>
+      <li><a class="button button-primary selectedButton" href="contact/index.html">
+          <span class="icon-bubbles4" aria-hidden="true">CONTACT</span>
+        </a></li>
+      <li><a class="button button-primary" href="program/index.html">
+          <span class="icon-clipboard" aria-hidden="true">PROGRAM</span>
+        </a></li>
+      <li><a class="button button-primary" href="purchase/index.html">
+          <span class="icon-coin-dollar" aria-hidden="true">PURCHASE</span>
+        </a></li>
+    </ul>
+  </nav>
+  <main style="max-width: 90%; margin: 0 auto;">
+    <h2>Contact</h2>
+    <div class="col-2" style="border-top: 2px solid var(--textcolor);">
+      <form class="form col-1">
+        <label for="name">Name:</label>
+        <input type="text" name="name" required placeholder="Fill out your name">
+        <label for="name">Email:</label>
+        <input type="text" name="email" required placeholder="Fill out your email address">
+        <label for="number">Phone:</label>
+        <input type="text" name="number" pattern="[0-9]{7}" placeholder="Fill out your phone number">
+        <textarea name="comment" value="" required placeholder=""></textarea>
+        <input class="submitButton" type="submit" value="Submit">
+      </form>
+      <div style="margin: 0 auto;"> <!-- Maps embed -->
+        <iframe class="mapsEmbed" src="https://maps.google.com/maps?q=North%20Atlantic%20Ocean&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+      </div>
+    </div>
+  </main>
+  <footer class="centre col-3 fullwidth">
+
+  </footer>
+</body>
+
+</html>
