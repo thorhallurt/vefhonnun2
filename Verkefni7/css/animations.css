@@ -1,0 +1,25 @@
+.loadIn {
+    animation-name: loadIn;
+    animation-iteration-count: 1;
+    animation-duration: 2s;
+    position: relative;
+    left: 0%;
+}
+
+.loadOut {
+    animation-name: loadOut;
+    animation-iteration-count: 1;
+    animation-duration: 2s;
+    position: relative;
+    left: 100%
+}
+
+@keyframes loadIn {
+    0%      {left: -100%}
+    100%    {left: 0%}
+}
+
+@keyframes loadOut {
+    0%      {left: 0%}
+    100%    {left: 100%}
+}
