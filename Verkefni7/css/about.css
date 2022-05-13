@@ -1,0 +1,91 @@
+.loadInAbout {
+    opacity: 1;
+    left: 0%;
+    animation-name: loadInAbout;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+}
+
+.loadOutAbout {
+    opacity: 0;
+    left: 100%;
+    animation-name: loadOutAbout;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+}
+
+.slide {
+    margin: 0 auto;
+    display: inline;
+    position: absolute;
+    width: 100%;
+    margin-top: 1em;
+}
+
+#slider {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.arrow {
+    position: absolute;
+    height: 15em;
+    width: auto;
+    top: 30%;
+}
+
+.arrowLeft {
+    left: -5vh;
+}
+
+.arrowRight {
+    right: -5vh;
+}
+
+.name { border-bottom: 2px solid var(--textcolor); }
+
+#autoPlayButton {
+    position: absolute;
+    left: 49%;
+    margin-left: -50px;
+}
+
+.autoPlayEnabled {
+    background-color: var(--secondarycol);
+}
+
+.autoPlayDisabled {
+    background-color: crimson
+}
+
+.profile {
+    border: 1px solid black;
+    width: 20%;
+    height: auto;
+}
+
+.slide div p {
+    max-width: 75%;
+    margin: 0 auto;
+}
+
+.dividedDiv { height: 22em; }
+
+@keyframes loadInAbout {
+    0%     {opacity: 1; left: -100%}
+    100%   {opacity: 1; left: 0%}
+}
+
+@keyframes loadOutAbout {
+    0%      {opacity: 1; left: 0%}
+    99%     {opacity: 1; left: 100%}
+    100%    {opacity: 0; left: 100%}
+}
+
+@media screen and (min-width:48em) {
+    .arrow {
+        height: 30em;
+    }
+    .slide div p { max-width: 20%; }
+    .dividedDiv { height: 40em; }
+}
