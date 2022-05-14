@@ -6,6 +6,7 @@ bodys.addEventListener('animationend', function() {
     object.classList.add('titleAnim');
     object.addEventListener('animationend', function() {
         object.classList.add('underscore');
+        object.classList.remove('titleAnim');
     });
  
 });

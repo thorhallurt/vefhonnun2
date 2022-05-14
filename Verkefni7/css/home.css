@@ -5,8 +5,12 @@
     animation-iteration-count: infinite;
 }
 
+.underscore::before {
+    content: "Learn web design." !important;
+}
+
 .titleAnim::before {
-    content: "Learn web design.";
+    content: "";
     animation-name: titleAnimation;
     animation-duration: 2s;
     animation-iteration-count: 1;
@@ -14,7 +18,7 @@
 
 picture {
     background-color: rgba(0,0,0,0.25);
-    margin: 0 auto;;
+    margin: 0 auto;
 }
 
 .imgback {
