@@ -36,7 +36,7 @@ footer {
 }
 
 @media screen and (min-width:48em) {
-    footer {
+    footer div {
         grid-template-columns: 1fr 1fr 1fr !important;
         grid-template-areas: "a b c";
     }
