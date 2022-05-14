@@ -20,6 +20,7 @@
     position: absolute;
     width: 100%;
     margin-top: 1em;
+    z-index: -1;
 }
 
 #slider {
@@ -32,6 +33,7 @@
     height: 15em;
     width: auto;
     top: 30%;
+    z-index: 5;
 }
 
 .arrowLeft {
@@ -51,11 +53,11 @@
 }
 
 .autoPlayEnabled {
-    background-color: var(--secondarycol);
+    background-color: var(--secondarycol) !important;
 }
 
 .autoPlayDisabled {
-    background-color: crimson
+    background-color: crimson !important;
 }
 
 .profile {

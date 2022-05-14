@@ -1,5 +1,6 @@
 const leftButton = document.querySelector('#left');
 const rightButton = document.querySelector('#right');
+const autoPlayButton = document.querySelector('#autoPlayButton');
 
 console.log("Starting slider")
 const slider = [document.querySelector('#slide0'), document.querySelector('#slide1'), document.querySelector('#slide2')];
@@ -8,6 +9,7 @@ let direction = 1;
 let current = 0;
 let autoplay = true;
 let allowArrow = true;
+let allowArrowToggle = false;
 
 function nextSlide() {
 
@@ -24,6 +26,9 @@ function nextSlide() {
         slider[current].classList.remove('loadOutAbout');
         console.log(slider[current]);
         slider[current].classList.add('loadInAbout');
+        slider[current].addEventListener('animationend', function() {
+            allowArrow = true;
+        });
     }
 
     slider[current].classList.remove('loadInAbout');
@@ -33,7 +38,9 @@ function nextSlide() {
 
 function autoSlide() {
     if (autoplay == true) {
-        nextSlide();
+        if (allowArrow == true) {
+            nextSlide();
+        }
     }
 }
 
@@ -41,7 +48,10 @@ function start() {
     slider[0].classList.add('loadInAbout');
     slider[1].classList.add('loadOutAbout');
     slider[2].classList.add('loadOutAbout');
-    var autoPlayInterval = setInterval(autoSlide, 5000);
+    if (autoplay == true) {
+        autoPlayButton.classList.add('autoPlayEnabled');
+    }
+    var autoPlayInterval = setInterval(autoSlide, 10000);
 }
 
 leftButton.onclick = function() {
@@ -50,9 +60,6 @@ leftButton.onclick = function() {
         direction = -1;
         nextSlide();
         direction = 1;
-        autoplay = false;
-        pauseAuto = setInterval(resetInterval, 15000);
-        allowInterval = setInterval(allowArrowInterval, 3000);
     }
 }
 rightButton.onclick = function() {
@@ -60,20 +67,21 @@ rightButton.onclick = function() {
         allowArrow = false;
         direction = 1;
         nextSlide();
-        autoplay = false;
-        pauseAuto = setInterval(resetInterval, 15000);
-        allowInterval = setInterval(allowArrowInterval, 3000);
     }
 }
 
-function resetInterval() {
-    autoplay = true;
-    resetInterval(pauseAuto);
-}
-
-function allowArrowInterval() {
-    allowArrow = true;
-    resetInterval(allowInterval);
+autoPlayButton.onclick = function() {
+    console.log("Toggling autoplay");
+    if (autoplay == true) {
+        autoPlayButton.classList.remove('autoPlayEnabled');
+        autoPlayButton.classList.add('autoPlayDisabled');
+        autoplay = false;
+        
+    } else {
+        autoPlayButton.classList.remove('autoPlayDisabled');
+        autoPlayButton.classList.add('autoPlayEnabled');
+        autoplay = true;
+    }
 }
 
 start();
